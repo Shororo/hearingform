@@ -1,0 +1,356 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/*colのガーター変更*/
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+  position: relative;
+  width: 100%;
+  padding-right: 0rem;
+  padding-left: 0rem;
+}
+/*colのガーター変更ここまで*/
+
+body {
+  line-height: 1.8;
+  letter-spacing: 0.18em;
+  font-family: 'Noto Serif JP', serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding-left:0.2rem;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  background:transparent;
+  text-decoration: none;
+  color: #FD7013;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000;
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;  
+  border-top:1px solid #cccccc;
+  margin:0 0;
+  padding:0;
+  border: 0;
+}
+
+/* form要素のcss全リセット */
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: none;
+}
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+/* form要素のcss全リセットここまで */
+/*リセットここまで*/
+
+/* font-size rem指定用に変換 */
+html {
+  /* ルートのフォントサイズを10pxに設定しておく */
+  font-size: 62.5%;
+}
+
+body {
+  /* ルートのフォントサイズを1.5em（15pxと同等のサイズ）に設定 */
+  font-size: 1.5em;
+}
+
+h1{
+  font-size: 3rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.3rem;
+}
+h2{
+  font-size: 2rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.3rem;
+}
+h3{
+  font-size: 1.6rem;
+}
+h5{
+  font-size: 1.5rem;
+}
+a{
+  font-size: 2.0rem;
+}
+p{
+  font-size: 1.6rem;
+}
+/* font-size rem指定用に変換ここまで */
+
+/*パディングとマージン*/
+.mt-6{
+  margin-top: 6rem;
+}
+.mt-7{
+  margin-top: 7rem;
+}
+.mb-6{
+  margin-bottom: 6rem;
+}
+.mb-7{
+  margin-bottom: 7rem;
+}
+.mb-8{
+  margin-bottom: 8rem;
+}
+.mb-10{
+  margin-bottom: 10rem;
+}
+.mb-15{
+  margin-bottom: 15rem;
+}
+.mt-10{
+  margin-top: 10rem;
+}
+.mtb-8{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.mtb-10{
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.mtb-12{
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+} 
+.mtb-15{
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+.pt-2-5{
+  padding-top: 2.5rem;
+}
+.pt-5-5{
+  padding-top: 4rem;
+}
+.pt-6{
+  padding-top: 6rem;
+}
+.pt-7{
+  padding-top: 7rem;
+}
+.pt-10{
+  padding-top: 10rem;
+}
+.pb-10{
+  padding-bottom: 10rem;
+}
+.pt-15{
+  padding-top: 15rem;
+}
+.pb-15{
+  padding-bottom: 15rem;
+}
+.ptb-7{
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.ptb-10{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.ptb-12{
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+} 
+.ptb-15{
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+/*パディングとマージンここまで*/
+
+/*widthとheight*/
+.width-90{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.width-100{
+  width: 100%;
+}
+.height-100{
+  height: 100%;
+}
+
+#about-seiryuusou{
+  margin-top: -7rem;
+  padding-top: 7rem;
+}
+#onsen{
+  margin-top: -7rem;
+  padding-top: 7rem;
+}
+#oheya{
+  margin-top: -7rem;
+  padding-top: 7rem;
+}
+#oshokuzi{
+  margin-top: -7rem;
+  padding-top: 7rem;
+}
+#annai{
+  margin-top: -7rem;
+  padding-top: 7rem;
+}
+#kihon{
+  margin-top: -7rem;
+  padding-top: 7rem;
+}
+/*widthとheightここまで*/
+
+/* イメージ要素をウィンドウサイズより大きくしない */
+img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+/* イメージ要素をウィンドウサイズより大きくしないここまで */
+
+/*カラー*/
+.d-shadow{
+  filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(0, 11, 40, 1));
+}
+.d-shadow-white{
+  filter: drop-shadow(0.25rem 0.25rem 0.25rem rgba(255, 255, 255, 1));
+}
+.bg-white{
+  
+}
+.bg-black{
+  background-color: #091321;
+}
+.bg-blue{
+  background-color: rgba(0, 11, 40, 1);
+}
+.text-gray{
+  color: #222831;
+}
+.clr-white{
+  color: white;
+}
+.clr-blue{
+  color: rgba(0, 11, 40, 1);
+}
+/*カラーここまで*/
+
+.d-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.z-1{
+  position: relative;
+  z-index: 1;
+}
+.none{
+  display: none;
+}
+.prologue{
+  background: linear-gradient(-135deg, #E4A972, #9941D8);
+}
+.sample{
+  background-color: #F7CF3B;
+}
